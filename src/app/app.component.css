@@ -1,0 +1,32 @@
+.title {
+  text-align: center;
+  text-decoration: underline;
+  /* color:; */
+}
+.post {
+  border: 1px solid black;
+  margin-bottom: 0.5em;
+  box-shadow: 5px 5px black;
+  h1 {
+    /* text-transform: uppe; */
+    text-align: center;
+    font-size: 1.1rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+    margin: 1.2em;
+  }
+}
+.post:nth-child(even) {
+  background-color: black;
+  /* background-color: black */
+  color: white;
+  box-shadow: 5px 5px grey;
+}
+/* .comments {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  translate: (-50%, -50%);
+} */

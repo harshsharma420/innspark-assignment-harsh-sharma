@@ -1,0 +1,22 @@
+<div class="main" *ngIf="!commentTrue">
+  <div class="title">
+    <h1>All Posts</h1>
+  </div>
+
+  <div class="post" *ngFor="let post of posts; let i = index">
+    <div class="clickable" (click)="viewComments(post.id)">
+      <h1>{{ i + 1 }}. "{{ post.title }}"</h1>
+      <p>{{ post.body }}</p>
+    </div>
+  </div>
+
+  <div class="comment" *ngIf="commentTrue">
+    <div class="comments" *ngFor="let comment of comments">
+      <h1>Comments</h1>
+      <button (click)="closeComments()">Close</button>
+      <p>
+        {{ comment.name }}
+      </p>
+    </div>
+  </div>
+</div>
