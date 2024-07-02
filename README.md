@@ -3,7 +3,7 @@
 This is an assignment for innspark solutions interview for frontend developer.
 Made in Angular.
 
-##Features
+## Features
 
  - Fetches data from API using Http Client
  - Displays said data
